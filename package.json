@@ -1,0 +1,15 @@
+{
+  "name": "ipgeolocations",
+  "description": "Demo REST API with Node",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "csvtojson": "^1.1.9",
+    "dotenv": "^4.0.0",
+    "express": "3.x",
+    "mongoose": "^4.10.8"
+  },
+  "devDependencies": {
+    "mongoose": "^4.13.7"
+  }
+}
