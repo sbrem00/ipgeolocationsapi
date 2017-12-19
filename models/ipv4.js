@@ -14,6 +14,6 @@ var ipv4Schema = new Schema({
   time_zone: String
 });
 
-
+ipv4Schema.index({ip_from: 1, ip_to: 1}, {unique: true});
 
 mongoose.model('ipv4', ipv4Schema);
