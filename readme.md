@@ -29,7 +29,28 @@ You are now ready to lookup IP Locations.
 
 ###Usage Instructions:
 
-To lookup IP location, navigate to the address `http://localhost:3001/v1/ipaddress` (e.g. http://localhost:3001/v1/123.456.789.10) if there is a matching record in the database you will recieve a response with a 200 code and a json object with the IP location details. If there are no matching records, you will recieve a 400 code and a message saying there are no matching records.  
+To lookup IP location, navigate to the address `http://localhost:3001/v1/ipaddress` (e.g. http://localhost:3001/v1/123.456.789.10) if there is a matching record in the database you will recieve a response with a 200 code and a json object with the IP location details. 
+
+A call for `http://localhost:3001/v1/8.8.8.8` will receive the following response:
+
+```$xslt
+{
+  "_id": "5a38e6b089fe56d48c23a84f",
+  "ip_from": 134744064,
+  "ip_to": 134744319,
+  "country_code": "US",
+  "country_name": "United States",
+  "region_name": "California",
+  "city_name": "Mountain View",
+  "latitude": "37.405992",
+  "longitude": "-122.078515",
+  "zip_code": "94043",
+  "time_zone": "-08:00",
+  "__v": 0
+}
+``` 
+
+If there are no matching records, you will recieve a 400 code and a message saying there are no matching records.  
 
 Currently this is just setup to lookup IPV4 addresses but I may expand it in the future to use IPV6 addresses. Let me know if this would be useful to you. 
 
